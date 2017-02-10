@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width" name="viewport">
+	<title>JS Bin</title>
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <!-- Chart JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.bundle.min.js"></script>
+  <!-- Semantic JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/accordion.min.js"></script>
+ 
+  <!-- Moment JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment-with-locales.min.js"></script>
+
+  <!-- Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <!-- Semantic CSS Components -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/card.min.css" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/grid.min.css" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/container.min.css" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/input.min.css" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/label.min.css" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/dropdown.min.css" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/menu.min.css" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/segment.min.css" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/button.min.css" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/table.min.css" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/header.min.css" rel="stylesheet" type="text/css">
+  	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/divider.min.css" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/components/accordion.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/components/progress.css" rel="stylesheet" type="text/css" />  
+  
+  <!-- unslide libraries -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/unslider/2.0.3/js/unslider-min.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/unslider/2.0.3/css/unslider-dots.css" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/unslider/2.0.3/css/unslider.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="ui orange segment" style="max-width:700px">
+		<div class="ui header">
+			Lila's attendance to date
+		</div>
+		
+		<div class="ui green tiny progress " id="studentCompleted">
+			<div class="label">
+				Registration Completed
+			</div>
+			<div class="bar"></div>
+		</div>
+		<div>
+          <div class="ui green tiny progress" id="courseCompleted">
+			<div class="label">
+				Course Completed
+			</div>
+			<div class="bar"></div>
+		</div>
+		<!--	<span id="attScore"></span> of course completed -->
+		</div>
+		<div class="ui divider"></div>
+		<canvas height="60" id="attendence"></canvas>
+		<div class="ui center aligned segment" id="attLegend">
+			Key:
+		</div>
+	</div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/components/progress.min.js"></script>
+</body>
+</html>
